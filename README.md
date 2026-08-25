@@ -6,7 +6,7 @@
 
 <br/>
 
-<a href="https://github.com/Tleukhanov/Tleukhanov">
+<a href="https://github.com/Tleukhanov">
   <img src="https://komarev.com/ghpvc/?username=Tleukhanov&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
 </a>
 
@@ -49,12 +49,15 @@ class Developer:
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![aiogram](https://img.shields.io/badge/aiogram_3.x-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![Pygame](https://img.shields.io/badge/Pygame-CE-4172B5?style=for-the-badge&logo=pygame&logoColor=white)
 
 #### ML & Data Science
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![CatBoost](https://img.shields.io/badge/CatBoost-F6C915?style=for-the-badge&logo=catboost&logoColor=black)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
 #### Databases & DevOps
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
@@ -72,66 +75,56 @@ class Developer:
 <tr>
 <td width="50%">
 
+### English_practic_bot
+Full-cycle Telegram bot-tutor for English. Voice & text practice, structured lessons, A1-C1 diagnostics, adaptive learning, achievements system. 71 commits, full ROADMAP, tests.
+
+**Stack:** Python, aiogram 3.x, DeepSeek/OpenAI, faster-whisper, edge-tts, SQLite
+
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/English_practic_bot)
+
+</td>
+<td width="50%">
+
 ### AI_automatic_bot
-AI-powered Telegram bot for small business. Handles client questions, accepts bookings, works 24/7.
+AI-powered Telegram bot for small business. Handles client questions, accepts bookings, works 24/7. Config-driven — change business info without touching code.
 
 **Stack:** Python, aiogram 3.x, DeepSeek AI, OpenRouter, SQLite
 
 [![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/AI_automatic_bot)
 
 </td>
-<td width="50%">
-
-### tenderparser
-Automated tender parser with analytics — finds suppliers, analyzes procurement history, exports to Excel.
-
-**Stack:** Python, REST API, Excel
-
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/tenderparser)
-
-</td>
 </tr>
 <tr>
 <td width="50%">
 
-### mvp_3d_site
-Interactive 3D portfolio website with particle neural networks and glassmorphism UI.
+### kaggle_competition_3
+Kaggle ML competition — multiple submissions with CatBoost, XGBoost, cross-validation, hyperparameter tuning. Data analysis + model comparison pipeline.
 
-**Stack:** Next.js 14, React Three Fiber, Three.js, TypeScript, Docker
+**Stack:** Python, Pandas, CatBoost, XGBoost, scikit-learn, Jupyter
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/mvp_3d_site)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/kaggle_competition_3)
 
 </td>
 <td width="50%">
 
 ### WB_parser
-Wildberries marketplace data parser for market analytics.
+Wildberries marketplace data scraper for market analytics — parse products, prices, reviews, and ratings at scale.
 
-**Stack:** Python, AsyncIO
+**Stack:** Python, AsyncIO, aiohttp
 
 [![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/WB_parser)
 
 </td>
 </tr>
 <tr>
-<td width="50%">
+<td colspan="2">
 
-### bank_data
-Customer churn prediction using ML — data analysis, feature engineering, model training.
+### My_mvp_game
+Napoleonic-style 2D tactical battle simulator with RTS controls, A* pathfinding, type-advantage combat, village capture, world map with diplomacy, modular AI architecture. 149 tests, Docker support.
 
-**Stack:** Python, Pandas, scikit-learn, Jupyter
+**Stack:** Python, Pygame-CE 2.5, A* pathfinding, FSM AI, Docker
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/bank_data)
-
-</td>
-<td width="50%">
-
-### English_practic_bot
-Telegram bot for daily English language practice with spaced repetition.
-
-**Stack:** Python, aiogram, SQLite
-
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/English_practic_bot)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/My_mvp_game)
 
 </td>
 </tr>
@@ -139,14 +132,20 @@ Telegram bot for daily English language practice with spaced repetition.
 
 ---
 
-## <img src="https://raw.githubusercontent.com/ElzeroWebSchool/Elzero-Web-School/main/Dark%20Mode/Assets/main gifs/wave.gif" width="40"> GitHub Analytics
+## <img src="https://raw.githubusercontent.com/ElzeroWebSchool/Elzero-Web-School/main/Dark%20Mode/Assets/main gifs/wave.gif" width="40"> GitHub Stats
 
 <div align="center">
 
 <a href="https://github.com/Tleukhanov">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=Tleukhanov&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+</a>
+<a href="https://github.com/Tleukhanov">
   <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=Tleukhanov&theme=tokyonight&hide_border=true" />
 </a>
+
+</div>
+
+<div align="center">
 
 <a href="https://github.com/Tleukhanov">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Tleukhanov&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
