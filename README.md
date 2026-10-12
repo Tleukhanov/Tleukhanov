@@ -93,12 +93,12 @@ Telegram-репетитор английского: уроки, A1–C1 диаг
 </td>
 <td width="50%">
 
-### AI_automatic_bot
-AI-powered Telegram bot for small business. Handles client questions, accepts bookings, works 24/7. Config-driven — change business info without touching code.
+### lichess_auto_ai
+Автоматизация шахматной федерации: турниры Lichess по расписанию, WhatsApp-бот с анонсами и RAG FAQ на RU/KK, SQLite-аналитика и веб-дашборд.
 
-**Stack:** Python, aiogram 3.x, DeepSeek AI, OpenRouter, SQLite
+**Stack:** Python, Lichess API, aiogram, SQLite
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/AI_automatic_bot)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/lichess_auto_ai)
 
 </td>
 </tr>
@@ -116,7 +116,7 @@ AI-powered Telegram bot for small business. Handles client questions, accepts bo
 <td width="50%">
 
 ### WB_parser
-Wildberries marketplace data scraper for market analytics — parse products, prices, reviews, and ratings at scale.
+Скрапер данных Wildberries для рыночной аналитики: товары, цены, отзывы и рейтинги в промышленных объёмах.
 
 **Stack:** Python, AsyncIO, aiohttp
 
@@ -128,7 +128,7 @@ Wildberries marketplace data scraper for market analytics — parse products, pr
 <td colspan="2">
 
 ### kaggle_competition_3
-Kaggle ML competition — multiple submissions with CatBoost, XGBoost, cross-validation, hyperparameter tuning. Data analysis + model comparison pipeline.
+Kaggle ML-соревнование: несколько сабмитов на CatBoost и XGBoost, кросс-валидация, подбор гиперпараметров. Пайплайн анализа данных и сравнения моделей.
 
 **Stack:** Python, Pandas, CatBoost, XGBoost, scikit-learn, Jupyter
 
