@@ -83,8 +83,8 @@ class Developer:
 <tr>
 <td width="50%">
 
-### English_practic_bot
-Telegram-репетитор английского: уроки, A1–C1 диагностика, голосовой контур (STT/TTS), достижения. Мульти-провайдерная LLM-фабрика (OpenAI, Gemini, Anthropic, Ollama) + RAG-прототип по материалам уроков.
+### AdaptENG
+Персональный AI-репетитор английского (ex-English_practic_bot): адаптивные уроки, A1–C1 диагностика, голосовой контур (STT/TTS), достижения. Мульти-провайдерная LLM-фабрика (OpenAI, Gemini, Anthropic, Ollama) + RAG по материалам уроков. Готовится web-версия.
 
 **Stack:** Python, aiogram 3.x, OpenRouter, faster-whisper, edge-tts, SQLite
 
@@ -115,12 +115,12 @@ Telegram-репетитор английского: уроки, A1–C1 диаг
 </td>
 <td width="50%">
 
-### WB_parser
-Скрапер данных Wildberries для рыночной аналитики: товары, цены, отзывы и рейтинги в промышленных объёмах.
+### TeenFreelance 🔒
+Бэкенд и ML для стартапа фриланс-платформы: модерация контента (ROC-AUC 0.90), LLM-улучшение текстов, рекомендации, 65 pytest-тестов и CI. Репозиторий приватный — доступ по запросу.
 
-**Stack:** Python, AsyncIO, aiohttp
+**Stack:** Python, FastAPI, PostgreSQL, scikit-learn, pytest
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/WB_parser)
+[![GitHub](https://img.shields.io/badge/Access_on_request-grey?style=for-the-badge)](https://github.com/Tleukhanov)
 
 </td>
 </tr>
