@@ -22,7 +22,7 @@ class Developer:
         self.name     = "Yeraly Tleukhanov"
         self.role     = "AI Engineer (Python)"
         self.location = "Astana, Kazakhstan"
-        self.focus    = ["LLM Integration", "RAG", "Conversational AI"]
+        self.focus    = ["LLM Integration", "RAG", "Conversational AI", "Applied ML"]
         self.stack    = ["Python", "FastAPI", "PostgreSQL", "OpenRouter"]
 ```
 
@@ -31,10 +31,17 @@ class Developer:
 ## Commercial Experience
 
 **TeenFreelance (startup)** — Backend + ML Engineer, 2026
-- Backend freelance-платформы: Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, pytest (65 тестов)
-- ML-модерация описаний заказов: TF-IDF + Logistic Regression (ROC-AUC 0.90 на CV)
-- LLM-улучшение текстов черновиков (OpenAI-совместимый API, предложение без записи в БД)
-- Закрыл 3 IDOR-уязвимости (файлы, черновики), документация API для фронта
+- Backend фриланс-платформы: Python, FastAPI, PostgreSQL, SQLAlchemy, Alembic, pytest (65 тестов), CI
+- Рекомендательный движок подбора исполнителей (backend-фича): топ-N кандидатов по проценту совпадения
+- Классификатор модерации описаний заказов (TF-IDF + Logistic Regression): отсеивает ТЗ с попыткой увода
+  с платформы и невнятные ТЗ → модератору либо AI-улучшение
+- Реальных данных не существовало → синтетический датасет. Провёл бенчмарк генераторов (Kimi vs DeepSeek),
+  обнаружил **mode collapse** у Kimi → переобучение; добавил разнообразие против shortcut learning
+- Тест-сет: часть примеров написал вручную, включая попытки обхода (`tg`, `whatsapp`) — детектор их ловил
+- ROC-AUC **0.90 на валидации / 0.80 на тесте**. **В прод осознанно не внедрил** — жду реальные данные,
+  потому что метрика на синтетике ≠ работа на живых людях
+- LLM-фича «улучшить ТЗ» (OpenAI-совместимый API, предложение без записи в БД)
+- Закрыл 3 IDOR-уязвимости, написал документацию API для фронта
 - Git-флоу: feature-ветки, code review, Pull Requests
 
 ---
@@ -58,11 +65,12 @@ class Developer:
 ![RAG](https://img.shields.io/badge/RAG-7C3AED?style=for-the-badge)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-0E7C3E?style=for-the-badge)
 ![Embeddings](https://img.shields.io/badge/Embeddings-9333EA?style=for-the-badge)
+![ONNX Runtime](https://img.shields.io/badge/ONNX_Runtime-005CED?style=for-the-badge&logo=onnx&logoColor=white)
 
 #### ML & Data Science
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![CatBoost](https://img.shields.io/badge/CatBoost-F6C915?style=for-the-badge&logoColor=black)
+![XGBoost](https://img.shields.io/badge/XGBoost-EC6C00?style=for-the-badge&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
@@ -84,55 +92,55 @@ class Developer:
 <td width="50%">
 
 ### AdaptENG
-Персональный AI-репетитор английского (ex-English_practic_bot): адаптивные уроки, A1–C1 диагностика, голосовой контур (STT/TTS), достижения. Мульти-провайдерная LLM-фабрика (OpenAI, Gemini, Anthropic, Ollama) + RAG по материалам уроков. Готовится web-версия.
+Персональный AI-репетитор английского: адаптивные уроки, диагностика уровня A1–C1, голосовой контур (STT/TTS), достижения. Мульти-провайдерная LLM-фабрика (OpenAI, Gemini, Anthropic, Ollama), RAG по грамматике (54 правила) с цитатами и честными отказами, SRS по SM-2, **489 тестов**, CI с Postgres. Есть web-версия: FastAPI + Next.js.
 
-**Stack:** Python, aiogram 3.x, OpenRouter, faster-whisper, edge-tts, SQLite
+**Stack:** Python, FastAPI, aiogram 3.x, Next.js, PostgreSQL, faster-whisper, edge-tts, pytest
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/English_practic_bot)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/AdaptENG)
 
 </td>
 <td width="50%">
 
-### lichess_auto_ai
-Автоматизация шахматной федерации: турниры Lichess по расписанию, WhatsApp-бот с анонсами и RAG FAQ на RU/KK, SQLite-аналитика и веб-дашборд.
+### chess_trainig_app
+Персональный шахматный тренер: партии с Lichess → анализ Stockfish → объяснение ошибок через LLM → дебютный репертуар → дрели из собственных зевков. **Инференс нейросети Maia-2 через ONNX** с ручным энкодером доски (18 плоскостей), зеркалированием при ходе чёрных, маскированием легальных ходов и ленивой выгрузкой модели под лимит 512 МБ. **741 тест.**
 
-**Stack:** Python, Lichess API, aiogram, SQLite
+**Stack:** Python, FastAPI, python-chess, Stockfish, ONNX Runtime, LLM, PostgreSQL
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/lichess_auto_ai)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/chess_trainig_app)
 
 </td>
 </tr>
 <tr>
 <td width="50%">
 
-### llm_integration_zavod
-Интеграция LLM в pipeline обработки видео: генерация сценариев и промптов через провайдеров (Gemini/OpenAI), фолбэк между ними. На основе upstream `random-or/shorts-clipper`.
+### shorts-factory
+Фабрика коротких видео поверх открытого пайплайна `random-or/shorts-clipper` (MIT). Моя часть — **159 файлов / ~39 400 строк, из них 75 файлов тестов**: шахматный модуль (PGN → решающий ход → отрисовка доски, Stockfish с честным фолбэком), stock-режим (оригинальные шорты без чужого видео), локальный Piper TTS, compliance gate, metrics store, отчёт по удержанию с грейдами A/B/C/D, TikTok-публикация, systemd-деплой.
 
-**Stack:** Python, Gemini API, OpenAI API
+**Stack:** Python, FFmpeg, faster-whisper, Stockfish, Piper TTS, systemd, GitHub Actions
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/llm_integration_zavod)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/shorts-factory)
 
 </td>
 <td width="50%">
 
-### TeenFreelance 🔒
-Бэкенд и ML для стартапа фриланс-платформы: модерация контента (ROC-AUC 0.90), LLM-улучшение текстов, рекомендации, 65 pytest-тестов и CI. Репозиторий приватный — доступ по запросу.
+### Fair_Play_Detector
+Сервис вероятностного анализа партий Lichess на признаки машиноподобной игры. Group-aware сплиты (по игроку, без пересечения групп), калибровка вероятностей, метрики: ROC-AUC, PR-AUC, recall@1%FPR, Brier, calibration curve. Пороги подбираются на валидации по max(precision×recall). Fail-closed гейт качества данных и sha256-хэш датасета. В README — честный разбор собственной утечки.
 
-**Stack:** Python, FastAPI, PostgreSQL, scikit-learn, pytest
+**Stack:** Python, FastAPI, SQLAlchemy, Alembic, scikit-learn, XGBoost, ONNX Runtime
 
-[![GitHub](https://img.shields.io/badge/Access_on_request-grey?style=for-the-badge)](https://github.com/Tleukhanov)
+[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/Fair_Play_Detector)
 
 </td>
 </tr>
 <tr>
 <td colspan="2">
 
-### kaggle_competition_3
-Kaggle ML-соревнование: несколько сабмитов на CatBoost и XGBoost, кросс-валидация, подбор гиперпараметров. Пайплайн анализа данных и сравнения моделей.
+### TeenFreelance 🔒
+Бэкенд и ML для стартапа фриланс-платформы: рекомендательный движок (backend), классификатор модерации ТЗ (TF-IDF + LogReg, ROC-AUC 0.90/0.80), синтетический датасет с бенчмарком генераторов, LLM-улучшение текстов, 65 pytest-тестов и CI. Репозиторий приватный — доступ по запросу.
 
-**Stack:** Python, Pandas, CatBoost, XGBoost, scikit-learn, Jupyter
+**Stack:** Python, FastAPI, PostgreSQL, SQLAlchemy, scikit-learn, pytest
 
-[![Readme](https://img.shields.io/badge/README-blue?style=for-the-badge)](https://github.com/Tleukhanov/kaggle_competition_3)
+[![GitHub](https://img.shields.io/badge/Access_on_request-grey?style=for-the-badge)](https://github.com/Tleukhanov)
 
 </td>
 </tr>
